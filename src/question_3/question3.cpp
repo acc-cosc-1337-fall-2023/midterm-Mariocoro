@@ -1,6 +1,14 @@
+#include<iostream>
 #include "question3.h"
+using namespace std;
 
-bool test_config()
+
+int fact::get_factorial_sequence(int n)
 {
-    return true;
+    int ans=1;
+    for (int i = 2; i <=n; i++)
+    {
+        ans*=i;
+    }
+    return ans;
 }
